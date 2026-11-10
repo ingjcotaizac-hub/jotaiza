@@ -28,34 +28,31 @@
 
   <!-- Favicon e Iconos -->
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <meta name="theme-color" content="#263B3D">
+  <meta name="theme-color" content="#0F1115">
 
-  <!-- Tipografía Editorial (Google Fonts con alternativas nativas de respaldo) -->
+  <!-- Tipografía Técnica y Editorial: IBM Plex Sans & IBM Plex Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
-  <!-- Hojas de Estilos -->
+  <!-- Hoja de Estilos -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
   <!-- Enlace accesible de salto al contenido -->
-  <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+  <a href="#contenido-principal" class="skip-link">[Saltar al contenido principal]</a>
 
   <!-- ========================================================================
-       A. CABECERA Y NAVEGACIÓN PRINCIPAL
+       ZONA A: CABECERA Y NAVEGACIÓN PRINCIPAL
        ======================================================================== -->
   <header class="sitio-cabecera" role="banner">
     <div class="contenedor cabecera-contenedor">
       
-      <!-- Logotipo tipográfico -->
-      <a href="#" class="logotipo" aria-label="JOTAIZA — Inicio">
-        <span class="logotipo-marca">
-          JOTAIZA
-          <span class="logotipo-punto" aria-hidden="true"></span>
-        </span>
-        <span class="logotipo-sub">Gestión Moodle &amp; E-learning</span>
+      <!-- Marca tipográfica JOTAIZA -->
+      <a href="#" class="marca-bloque" aria-label="JOTAIZA — Inicio">
+        <span class="marca-nombre">JOTAIZA<span class="marca-punto-acento" aria-hidden="true"></span></span>
+        <span class="marca-descriptor">ESTUDIO TÉCNICO · E-LEARNING &amp; LMS</span>
       </a>
 
       <!-- Botón de menú móvil -->
@@ -73,7 +70,10 @@
           <li><a href="#sobre-mi">Sobre mí</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
-        <a href="#contacto" class="btn btn-header">Hablemos de tu proyecto</a>
+        <a href="#contacto" class="btn btn-header-tecnico">
+          <span class="btn-coord">[04]</span>
+          <span>Hablemos de tu proyecto</span>
+        </a>
       </nav>
 
     </div>
@@ -85,21 +85,22 @@
   <main id="contenido-principal">
 
     <!-- ======================================================================
-         B. HERO PRINCIPAL
+         ZONA B: HERO PRINCIPAL EDITORIAL
          ====================================================================== -->
     <section class="seccion seccion-hero" aria-labelledby="hero-titular">
       <div class="contenedor">
-        <div class="hero-grid">
+        <div class="hero-reticula-asimetrica">
           
-          <!-- Columna principal con textos obligatorios -->
-          <div class="hero-contenido">
-            <div class="hero-etiqueta-superior">
-              <span class="hero-etiqueta-punto" aria-hidden="true"></span>
-              <span>Especialista independiente · Formación &amp; E-learning</span>
+          <!-- Columna principal de contenido -->
+          <div class="hero-columna-texto">
+            <div class="hero-meta-coordenada">
+              <span class="señal-acento">■</span>
+              <span>REF. 00 / ESPECIALISTA INDEPENDIENTE · BARCELONA</span>
             </div>
 
             <h1 id="hero-titular" class="hero-titular">
-              Tu campus Moodle, bien gestionado. Tus manuales, convertidos en cursos.
+              Tu campus Moodle, bien gestionado.
+              <span class="hero-titular-secundario">Tus manuales, convertidos en cursos.</span>
             </h1>
 
             <p class="hero-subtitulo">
@@ -113,9 +114,7 @@
             <div class="hero-acciones">
               <a href="#contacto" class="btn btn-primary">
                 <span>Cuéntame qué necesitas</span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
+                <span class="señal-acento" aria-hidden="true">→</span>
               </a>
               <a href="#servicios" class="btn btn-secondary">
                 <span>Conoce los servicios</span>
@@ -123,54 +122,71 @@
             </div>
           </div>
 
-          <!-- Columna lateral: Panel editorial estructurado -->
-          <aside class="hero-panel-editorial" aria-label="Resumen de servicios profesionales">
-            <div class="panel-editorial-cabecera">
-              <p class="panel-editorial-sub">Propuesta de valor</p>
-              <h2 class="panel-editorial-titulo">Especialización directa</h2>
+          <!-- Columna lateral: Referencia Gráfica Técnica y Modular -->
+          <aside class="hero-diagrama-panel" aria-label="Esquema estructural de servicios">
+            <div class="diagrama-barra-superior">
+              <span>ESQUEMA DE OPERACIONES // MOD.SYS-LRN</span>
+              <span class="señal-acento">● ACTIVO</span>
             </div>
 
-            <ul class="panel-lista-pilares" role="list">
-              <li class="panel-item-pilar">
-                <div class="pilar-icono-caja" aria-hidden="true">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                  </svg>
+            <div class="diagrama-cuerpo">
+              
+              <!-- Bloque 01: Operativa Campus Moodle -->
+              <div class="diagrama-modulo">
+                <div class="modulo-cabecera">
+                  <span class="modulo-codigo">MOD-01 // OPERATIVA LMS</span>
+                  <span class="modulo-nombre">Campus Moodle</span>
                 </div>
-                <div class="pilar-texto">
-                  <strong>Sin intermediarios</strong>
-                  <span>Trato personal y directo con quien realiza y supervisa el trabajo.</span>
-                </div>
-              </li>
+                <ul class="modulo-lista-nodos" role="list">
+                  <li class="modulo-nodo">
+                    <span class="nodo-clave">[USUARIOS]</span>
+                    <span>Altas · Bajas · Grupos</span>
+                  </li>
+                  <li class="modulo-nodo">
+                    <span class="nodo-clave">[CURSOS]</span>
+                    <span>Configuración · Certificados</span>
+                  </li>
+                  <li class="modulo-nodo">
+                    <span class="nodo-clave">[CONTROL]</span>
+                    <span>Seguimiento · Incidencias</span>
+                  </li>
+                </ul>
+              </div>
 
-              <li class="panel-item-pilar">
-                <div class="pilar-icono-caja" aria-hidden="true">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                  </svg>
-                </div>
-                <div class="pilar-texto">
-                  <strong>Enfoque funcional preciso</strong>
-                  <span>Resolución de la operativa diaria del campus sin alterar código ni servidores.</span>
-                </div>
-              </li>
+              <!-- Conector de flujo entre ambos ámbitos -->
+              <div class="diagrama-conector" aria-hidden="true">
+                <span class="diagrama-conector-linea"></span>
+                <span>↓ INTERCONEXIÓN DIDÁCTICA ↓</span>
+                <span class="diagrama-conector-linea"></span>
+              </div>
 
-              <li class="panel-item-pilar">
-                <div class="pilar-icono-caja" aria-hidden="true">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                  </svg>
+              <!-- Bloque 02: Transformación de Documentación -->
+              <div class="diagrama-modulo">
+                <div class="modulo-cabecera">
+                  <span class="modulo-codigo">MOD-02 // PRODUCCIÓN</span>
+                  <span class="modulo-nombre">Contenidos Didácticos</span>
                 </div>
-                <div class="pilar-texto">
-                  <strong>Criterio pedagógico y técnico</strong>
-                  <span>Rigor de ingeniería aplicada a la estructura documental y al aprendizaje.</span>
-                </div>
-              </li>
-            </ul>
+                <ul class="modulo-lista-nodos" role="list">
+                  <li class="modulo-nodo">
+                    <span class="nodo-clave">[ORIGEN]</span>
+                    <span>Manuales · Procedimientos · PDFs</span>
+                  </li>
+                  <li class="modulo-nodo">
+                    <span class="nodo-clave">[PROCESO]</span>
+                    <span>Estructuración · Cuestionarios</span>
+                  </li>
+                  <li class="modulo-nodo">
+                    <span class="nodo-clave">[ENTREGA]</span>
+                    <span>Aulas virtuales · Paquetes SCORM</span>
+                  </li>
+                </ul>
+              </div>
 
-            <div class="panel-editorial-pie">
-              <span>Barcelona y área metropolitana</span>
-              <span>Servicio en toda España</span>
+            </div>
+
+            <div class="diagrama-barra-inferior">
+              <span>TRATO DIRECTO SIN INTERMEDIARIOS</span>
+              <span>BARCELONA &amp; REMOTO</span>
             </div>
           </aside>
 
@@ -179,194 +195,217 @@
     </section>
 
     <!-- ======================================================================
-         C. SERVICIOS (DOS LÍNEAS CLARAMENTE DIFERENCIADAS)
+         ZONA C: PRESENTACIÓN DE SERVICIOS (VISUALMENTE DIFERENCIADOS)
          ====================================================================== -->
     <section id="servicios" class="seccion seccion-servicios" aria-labelledby="titulo-servicios">
       <div class="contenedor">
         
         <div class="encabezado-seccion">
-          <span class="etiqueta-seccion">01 / Áreas de especialización</span>
+          <div class="tag-tecnico">
+            <span class="señal-acento">01</span>
+            <span>// ÁREAS DE ESPECIALIZACIÓN TÉCNICA</span>
+          </div>
           <h2 id="titulo-servicios">Servicios directos y especializados</h2>
           <p>
             Dos líneas de trabajo independientes o combinadas, orientadas a resolver necesidades operativas reales en centros de formación, academias y empresas.
           </p>
         </div>
 
-        <div class="servicios-lista">
+        <div class="servicios-contenedor-diferenciado">
 
-          <!-- SERVICIO 1: ADMINISTRACIÓN FUNCIONAL DE MOODLE -->
-          <article class="servicio-tarjeta" id="servicio-moodle" aria-labelledby="titulo-servicio-1">
-            <div class="servicio-cabecera">
-              <div class="servicio-meta-superior">
-                <span class="servicio-numero">Línea de servicio 01</span>
-                <span class="servicio-categoria-tag">Operativa de campus virtual</span>
+          <!-- SERVICIO 1: ADMINISTRACIÓN FUNCIONAL DE MOODLE (MATRIZ OPERATIVA) -->
+          <article class="servicio-bloque-moodle" id="servicio-moodle" aria-labelledby="titulo-servicio-1">
+            <div class="servicio-encabezado-moodle">
+              <div class="servicio-meta-codigo">
+                <span class="codigo-activo">LÍNEA OPERATIVA 01</span>
+                <span>/ /</span>
+                <span>PLATAFORMA LMS</span>
               </div>
-              <h3 id="titulo-servicio-1" class="servicio-titulo">Administración funcional de Moodle</h3>
-              <p class="servicio-descripcion-lead">
+              <h3 id="titulo-servicio-1" class="servicio-titulo-moodle">Administración funcional de Moodle</h3>
+              <p class="servicio-descripcion-moodle">
                 Tu plataforma necesita algo más que estar instalada. Necesita una gestión diaria que mantenga organizados los cursos, los usuarios y el seguimiento de la formación.
               </p>
             </div>
 
-            <div class="bloque-tareas">
-              <h4 class="bloque-tareas-titulo">Tareas incluidas habitualmente:</h4>
-              <ul class="tareas-cuadricula" role="list">
-                <li class="tarea-item">
-                  <svg class="tarea-check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>Alta y baja de usuarios.</span>
-                </li>
-                <li class="tarea-item">
-                  <svg class="tarea-check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>Matrículas y asignación a grupos.</span>
-                </li>
-                <li class="tarea-item">
-                  <svg class="tarea-check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>Gestión de roles y permisos.</span>
-                </li>
-                <li class="tarea-item">
-                  <svg class="tarea-check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>Organización y configuración de cursos.</span>
-                </li>
-                <li class="tarea-item">
-                  <svg class="tarea-check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>Seguimiento e informes de actividad.</span>
-                </li>
-                <li class="tarea-item">
-                  <svg class="tarea-check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>Gestión de finalización y certificados.</span>
-                </li>
-                <li class="tarea-item">
-                  <svg class="tarea-check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>Atención a alumnos y docentes ante incidencias de uso.</span>
-                </li>
-                <li class="tarea-item">
-                  <svg class="tarea-check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>Coordinación con el proveedor técnico cuando existan problemas de servidor o programación.</span>
-                </li>
-              </ul>
+            <!-- Matriz sistemática de tareas operativas -->
+            <div class="matriz-operativa">
+              <div class="matriz-titulo-seccion">Registro de tareas operativas incluidas:</div>
+              <div class="matriz-rejilla" role="list">
+                
+                <div class="matriz-celda" role="listitem">
+                  <span class="celda-indice">[T-01]</span>
+                  <div class="celda-cuerpo">
+                    <div class="celda-texto">Alta y baja de usuarios.</div>
+                    <span class="celda-categoria">Gestión de accesos y participantes</span>
+                  </div>
+                </div>
+
+                <div class="matriz-celda" role="listitem">
+                  <span class="celda-indice">[T-02]</span>
+                  <div class="celda-cuerpo">
+                    <div class="celda-texto">Matrículas y asignación a grupos.</div>
+                    <span class="celda-categoria">Organización académica</span>
+                  </div>
+                </div>
+
+                <div class="matriz-celda" role="listitem">
+                  <span class="celda-indice">[T-03]</span>
+                  <div class="celda-cuerpo">
+                    <div class="celda-texto">Gestión de roles y permisos.</div>
+                    <span class="celda-categoria">Gobernanza y seguridad funcional</span>
+                  </div>
+                </div>
+
+                <div class="matriz-celda" role="listitem">
+                  <span class="celda-indice">[T-04]</span>
+                  <div class="celda-cuerpo">
+                    <div class="celda-texto">Organización y configuración de cursos.</div>
+                    <span class="celda-categoria">Estructura curricular</span>
+                  </div>
+                </div>
+
+                <div class="matriz-celda" role="listitem">
+                  <span class="celda-indice">[T-05]</span>
+                  <div class="celda-cuerpo">
+                    <div class="celda-texto">Seguimiento e informes de actividad.</div>
+                    <span class="celda-categoria">Supervisión y control</span>
+                  </div>
+                </div>
+
+                <div class="matriz-celda" role="listitem">
+                  <span class="celda-indice">[T-06]</span>
+                  <div class="celda-cuerpo">
+                    <div class="celda-texto">Gestión de finalización y certificados.</div>
+                    <span class="celda-categoria">Evaluación y acreditación</span>
+                  </div>
+                </div>
+
+                <div class="matriz-celda" role="listitem">
+                  <span class="celda-indice">[T-07]</span>
+                  <div class="celda-cuerpo">
+                    <div class="celda-texto">Atención a alumnos y docentes ante incidencias de uso.</div>
+                    <span class="celda-categoria">Soporte funcional directo</span>
+                  </div>
+                </div>
+
+                <div class="matriz-celda" role="listitem">
+                  <span class="celda-indice">[T-08]</span>
+                  <div class="celda-cuerpo">
+                    <div class="celda-texto">Coordinación con el proveedor técnico cuando existan problemas de servidor o programación.</div>
+                    <span class="celda-categoria">Enlace de sistemas</span>
+                  </div>
+                </div>
+
+              </div>
             </div>
 
-            <!-- Aclaración de delimitación obligatoria -->
-            <div class="caja-delimitacion" role="note">
-              <svg class="caja-delimitacion-icono" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <div class="caja-delimitacion-texto">
-                <strong>Delimitación del alcance:</strong>
+            <!-- Cláusula de delimitación técnica obligatoria -->
+            <div class="clausula-delimitacion" role="note">
+              <div class="clausula-cabecera">
+                <span class="señal-acento">■</span>
+                <span>Cláusula de delimitación del alcance técnico</span>
+              </div>
+              <div class="clausula-texto">
                 El servicio se centra en la administración funcional y operativa. No incluye administración de servidores, programación de plugins ni desarrollo de Moodle.
               </div>
             </div>
 
-            <div class="servicio-pie-accion">
-              <a href="#contacto" class="btn btn-outline-claro">
+            <div class="servicio-accion-inferior">
+              <a href="#contacto" class="btn btn-secondary">
                 <span>Consultar sobre administración Moodle</span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
+                <span class="señal-acento" aria-hidden="true">→</span>
               </a>
             </div>
           </article>
 
-          <!-- SERVICIO 2: TRANSFORMACIÓN DE MANUALES EN CURSOS E-LEARNING -->
-          <article class="servicio-tarjeta" id="servicio-transformacion" aria-labelledby="titulo-servicio-2">
-            <div class="servicio-cabecera">
-              <div class="servicio-meta-superior">
-                <span class="servicio-numero">Línea de servicio 02</span>
-                <span class="servicio-categoria-tag">Didáctica y producción digital</span>
+          <!-- SERVICIO 2: TRANSFORMACIÓN DE MANUALES EN CURSOS E-LEARNING (PIPELINE DUAL) -->
+          <article class="servicio-bloque-produccion" id="servicio-transformacion" aria-labelledby="titulo-servicio-2">
+            <div class="servicio-encabezado-produccion">
+              <div class="servicio-meta-codigo">
+                <span class="codigo-activo">LÍNEA DE PRODUCCIÓN 02</span>
+                <span>/ /</span>
+                <span>DISEÑO INSTRUCCIONAL &amp; SCORM</span>
               </div>
-              <h3 id="titulo-servicio-2" class="servicio-titulo">Transformación de manuales en cursos e-learning</h3>
-              <p class="servicio-descripcion-lead">
+              <h3 id="titulo-servicio-2" class="servicio-titulo-produccion">Transformación de manuales en cursos e-learning</h3>
+              <p class="servicio-descripcion-produccion">
                 Tus manuales, procedimientos y documentos técnicos pueden convertirse en materiales formativos estructurados, con actividades y evaluaciones que faciliten el aprendizaje.
               </p>
             </div>
 
-            <!-- Dos niveles diferenciados -->
-            <div class="niveles-contenedor">
+            <!-- Estructura dual de producción en dos niveles -->
+            <div class="pipeline-esquema-paso">
               
-              <!-- Nivel 1: Transformación básica -->
-              <div class="nivel-columna">
-                <div class="nivel-cabecera">
-                  <p class="nivel-etiqueta">Modalidad 01</p>
-                  <h4 class="nivel-nombre">Transformación básica</h4>
-                  <p class="nivel-subtexto">Estructuración, organización y digitalización ágil de materiales técnicos.</p>
-                </div>
-                <ul class="nivel-lista" role="list">
-                  <li class="nivel-item">
-                    <span class="nivel-item-punto" aria-hidden="true"></span>
+              <!-- Nivel A: Transformación básica -->
+              <div class="columna-nivel">
+                <span class="nivel-etiqueta-mono">ESPECIFICACIÓN MOD-01</span>
+                <h4 class="nivel-nombre-titulo">Transformación básica</h4>
+                <p class="nivel-descripcion-corta">
+                  Estructuración, orden y digitalización ágil para manuales técnicos y procedimentales.
+                </p>
+
+                <ul class="nivel-lista-items" role="list">
+                  <li class="nivel-item-fila">
+                    <span class="nivel-item-num">01.</span>
                     <span>Organización de contenidos.</span>
                   </li>
-                  <li class="nivel-item">
-                    <span class="nivel-item-punto" aria-hidden="true"></span>
+                  <li class="nivel-item-fila">
+                    <span class="nivel-item-num">02.</span>
                     <span>Estructuración en módulos y unidades.</span>
                   </li>
-                  <li class="nivel-item">
-                    <span class="nivel-item-punto" aria-hidden="true"></span>
+                  <li class="nivel-item-fila">
+                    <span class="nivel-item-num">03.</span>
                     <span>Incorporación de documentos y recursos.</span>
                   </li>
-                  <li class="nivel-item">
-                    <span class="nivel-item-punto" aria-hidden="true"></span>
+                  <li class="nivel-item-fila">
+                    <span class="nivel-item-num">04.</span>
                     <span>Cuestionarios de evaluación.</span>
                   </li>
-                  <li class="nivel-item">
-                    <span class="nivel-item-punto" aria-hidden="true"></span>
+                  <li class="nivel-item-fila">
+                    <span class="nivel-item-num">05.</span>
                     <span>Actividades sencillas.</span>
                   </li>
-                  <li class="nivel-item">
-                    <span class="nivel-item-punto" aria-hidden="true"></span>
+                  <li class="nivel-item-fila">
+                    <span class="nivel-item-num">06.</span>
                     <span>Montaje en Moodle cuando corresponda.</span>
                   </li>
                 </ul>
               </div>
 
-              <!-- Nivel 2: Diseño didáctico y transformación avanzada -->
-              <div class="nivel-columna avanzada">
-                <div class="nivel-cabecera">
-                  <p class="nivel-etiqueta">Modalidad 02</p>
-                  <h4 class="nivel-nombre">Diseño didáctico y transformación avanzada</h4>
-                  <p class="nivel-subtexto">Diseño instruccional exhaustivo, interactividad y evaluación competencial.</p>
-                </div>
-                <ul class="nivel-lista" role="list">
-                  <li class="nivel-item">
-                    <span class="nivel-item-punto" aria-hidden="true"></span>
+              <!-- Nivel B: Diseño didáctico y transformación avanzada -->
+              <div class="columna-nivel nivel-avanzado">
+                <span class="nivel-etiqueta-mono">ESPECIFICACIÓN MOD-02</span>
+                <h4 class="nivel-nombre-titulo">Diseño didáctico y transformación avanzada</h4>
+                <p class="nivel-descripcion-corta">
+                  Ingeniería pedagógica profunda, interactividad, escenarios y producción de paquetes SCORM.
+                </p>
+
+                <ul class="nivel-lista-items" role="list">
+                  <li class="nivel-item-fila">
+                    <span class="nivel-item-num">01.</span>
                     <span>Análisis y estructuración pedagógica.</span>
                   </li>
-                  <li class="nivel-item">
-                    <span class="nivel-item-punto" aria-hidden="true"></span>
+                  <li class="nivel-item-fila">
+                    <span class="nivel-item-num">02.</span>
                     <span>Definición de objetivos de aprendizaje.</span>
                   </li>
-                  <li class="nivel-item">
-                    <span class="nivel-item-punto" aria-hidden="true"></span>
+                  <li class="nivel-item-fila">
+                    <span class="nivel-item-num">03.</span>
                     <span>Diseño de actividades e interacciones.</span>
                   </li>
-                  <li class="nivel-item">
-                    <span class="nivel-item-punto" aria-hidden="true"></span>
+                  <li class="nivel-item-fila">
+                    <span class="nivel-item-num">04.</span>
                     <span>Evaluaciones y escenarios.</span>
                   </li>
-                  <li class="nivel-item">
-                    <span class="nivel-item-punto" aria-hidden="true"></span>
+                  <li class="nivel-item-fila">
+                    <span class="nivel-item-num">05.</span>
                     <span>Simulaciones cuando el contenido lo justifique.</span>
                   </li>
-                  <li class="nivel-item">
-                    <span class="nivel-item-punto" aria-hidden="true"></span>
+                  <li class="nivel-item-fila">
+                    <span class="nivel-item-num">06.</span>
                     <span>Producción SCORM cuando corresponda.</span>
                   </li>
-                  <li class="nivel-item">
-                    <span class="nivel-item-punto" aria-hidden="true"></span>
+                  <li class="nivel-item-fila">
+                    <span class="nivel-item-num">07.</span>
                     <span>Pruebas de funcionamiento en el LMS.</span>
                   </li>
                 </ul>
@@ -374,23 +413,21 @@
 
             </div>
 
-            <!-- Nota sobre multimedia obligatoria -->
-            <div class="caja-delimitacion aviso-multimedia" role="note">
-              <svg class="caja-delimitacion-icono" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-              </svg>
-              <div class="caja-delimitacion-texto">
-                <strong>Nota sobre recursos audiovisuales y multimedia:</strong>
-                La producción multimedia compleja, locuciones profesionales y animaciones avanzadas no forman parte automática de todos los proyectos; se presupuestarán de forma independiente según el alcance específico requerido.
+            <!-- Nota sobre producción multimedia obligatoria -->
+            <div class="clausula-delimitacion multimedia" role="note">
+              <div class="clausula-cabecera">
+                <span class="señal-acento">■</span>
+                <span>Condiciones sobre recursos audiovisuales y multimedia</span>
+              </div>
+              <div class="clausula-texto">
+                La producción multimedia compleja, locuciones profesionales y animaciones avanzadas no forman parte automática de todos los proyectos; se presupuestarán de forma independiente según el alcance específico acordado.
               </div>
             </div>
 
-            <div class="servicio-pie-accion">
-              <a href="#contacto" class="btn btn-outline-claro">
+            <div class="servicio-accion-inferior">
+              <a href="#contacto" class="btn btn-secondary">
                 <span>Consultar sobre transformación de materiales</span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
+                <span class="señal-acento" aria-hidden="true">→</span>
               </a>
             </div>
           </article>
@@ -401,49 +438,53 @@
     </section>
 
     <!-- ======================================================================
-         D. CÓMO TRABAJO (PROCESO DE CUATRO ETAPAS)
+         D. CÓMO TRABAJO (PROCESO METODOLÓGICO DE 4 ETAPAS)
          ====================================================================== -->
     <section id="como-trabajo" class="seccion seccion-metodologia" aria-labelledby="titulo-metodologia">
       <div class="contenedor">
         
         <div class="encabezado-seccion">
-          <span class="etiqueta-seccion">02 / Metodología</span>
+          <div class="tag-tecnico">
+            <span class="señal-acento">02</span>
+            <span>// METODOLOGÍA Y PROTOCOLO</span>
+          </div>
           <h2 id="titulo-metodologia">Cómo trabajo</h2>
           <p>
             Un método ordenado, transparente y sin sorpresas. Cada fase cuenta con objetivos claros y comunicación continua.
           </p>
         </div>
 
-        <div class="cuadricula-pasos">
+        <!-- Flujo horizontal sistemático -->
+        <div class="flujo-pasos-tecnico">
           
-          <div class="paso-tarjeta">
-            <span class="paso-numero-orden">01</span>
-            <h3 class="paso-titulo">Analizamos</h3>
-            <p class="paso-descripcion">
+          <div class="paso-tecnico-card">
+            <span class="paso-codigo-orden">PASO 01</span>
+            <h3 class="paso-nombre-titulo">Analizamos</h3>
+            <p class="paso-descripcion-texto">
               Revisamos el campus o los materiales y definimos necesidades concretas de formación y operativa.
             </p>
           </div>
 
-          <div class="paso-tarjeta">
-            <span class="paso-numero-orden">02</span>
-            <h3 class="paso-titulo">Delimitamos</h3>
-            <p class="paso-descripcion">
+          <div class="paso-tecnico-card">
+            <span class="paso-codigo-orden">PASO 02</span>
+            <h3 class="paso-nombre-titulo">Delimitamos</h3>
+            <p class="paso-descripcion-texto">
               Establecemos tareas, entregables, responsabilidades y alcance exacto antes de iniciar cualquier labor.
             </p>
           </div>
 
-          <div class="paso-tarjeta">
-            <span class="paso-numero-orden">03</span>
-            <h3 class="paso-titulo">Ejecutamos</h3>
-            <p class="paso-descripcion">
+          <div class="paso-tecnico-card">
+            <span class="paso-codigo-orden">PASO 03</span>
+            <h3 class="paso-nombre-titulo">Ejecutamos</h3>
+            <p class="paso-descripcion-texto">
               Realizo el trabajo acordado directamente, con rigor metódico y comunicación fluida en cada hito.
             </p>
           </div>
 
-          <div class="paso-tarjeta">
-            <span class="paso-numero-orden">04</span>
-            <h3 class="paso-titulo">Verificamos</h3>
-            <p class="paso-descripcion">
+          <div class="paso-tecnico-card">
+            <span class="paso-codigo-orden">PASO 04</span>
+            <h3 class="paso-nombre-titulo">Verificamos</h3>
+            <p class="paso-descripcion-texto">
               Comprobamos el funcionamiento en la plataforma y entregamos los resultados listos para su uso.
             </p>
           </div>
@@ -451,66 +492,67 @@
         </div>
 
         <!-- Texto de apoyo metodológico obligatorio -->
-        <div class="nota-apoyo-metodologia" role="note">
-          <svg class="nota-apoyo-icono" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-          <blockquote class="nota-apoyo-texto">
+        <div class="nota-apoyo-editorial" role="note">
+          <span class="nota-apoyo-indicador" aria-hidden="true">■</span>
+          <p class="nota-apoyo-cita">
             «Cada servicio se adapta al volumen de trabajo y a las necesidades reales del cliente. Antes de empezar, definimos qué incluye y qué queda fuera.»
-          </blockquote>
+          </p>
         </div>
 
       </div>
     </section>
 
     <!-- ======================================================================
-         E. SOBRE MÍ
+         E. SOBRE MÍ (PERFIL TÉCNICO Y PROFESIONAL)
          ====================================================================== -->
     <section id="sobre-mi" class="seccion seccion-sobre-mi" aria-labelledby="titulo-sobre-mi">
       <div class="contenedor">
         
-        <div class="sobre-mi-grid">
+        <div class="sobre-mi-reticula">
           
           <!-- Narrativa profesional sobria y verídica -->
-          <div class="sobre-mi-narrativa">
-            <span class="etiqueta-seccion">03 / Perfil profesional</span>
+          <div class="sobre-mi-columna-narrativa">
+            <div class="tag-tecnico" style="margin-bottom: 0.65rem;">
+              <span class="señal-acento">03</span>
+              <span>// PERFIL PROFESIONAL</span>
+            </div>
+            
             <h2 id="titulo-sobre-mi" class="sobre-mi-titular">
               Experiencia en formación, procesos y tecnología educativa.
             </h2>
 
-            <p class="sobre-mi-parrafo-principal">
+            <p class="sobre-mi-parrafo-destacado">
               Soy Juan Carlos Otaiza, ingeniero químico y formador. Desde 2016 trabajo con Moodle, creando y organizando aulas virtuales, desarrollando materiales didácticos y gestionando procesos de formación.
             </p>
 
-            <p class="sobre-mi-parrafo">
+            <p class="sobre-mi-parrafo-normal">
               Mi experiencia combina formación, organización de procesos y tecnología educativa. Esto me permite abordar tanto la estructura de los contenidos como las tareas operativas que hacen funcionar un campus virtual.
             </p>
 
-            <div class="sobre-mi-firma">
-              <span class="firma-nombre">Juan Carlos Otaiza</span>
-              <span class="firma-cargo">Especialista en Moodle &amp; Contenidos E-learning</span>
+            <div class="sobre-mi-ficha-firma">
+              <span class="firma-nombre-tecnico">Juan Carlos Otaiza</span>
+              <span class="firma-especialidad">Especialista en Moodle &amp; Contenidos E-learning</span>
             </div>
           </div>
 
-          <!-- Tarjeta de enfoque y rigor metodológico -->
-          <aside class="sobre-mi-card-pilares" aria-label="Bases del perfil profesional">
-            <div class="card-pilares-cabecera">
-              <p class="card-pilares-sub">Criterio y práctica</p>
-              <h3 class="card-pilares-titulo">¿Por qué este perfil?</h3>
+          <!-- Panel de fundamentos del perfil -->
+          <aside class="sobre-mi-fundamentos-panel" aria-label="Bases del perfil profesional">
+            <div class="fundamentos-cabecera">
+              <span>FUNDAMENTOS TÉCNICOS Y PEDAGÓGICOS</span>
             </div>
 
-            <ul class="pilares-lista" role="list">
-              <li class="pilar-detalle-item">
+            <ul class="fundamentos-lista" role="list">
+              <li class="fundamento-item">
                 <strong>Ingeniería y organización de procesos</strong>
                 <p>Estructura metódica para ordenar documentación técnica, planificar flujos formativos y resolver incidencias de manera sistemática.</p>
               </li>
 
-              <li class="pilar-detalle-item">
+              <li class="fundamento-item">
                 <strong>Experiencia formadora real</strong>
                 <p>Visión pedagógica práctica: entender qué necesita un docente para impartir y qué necesita un alumno para avanzar sin frustración.</p>
               </li>
 
-              <li class="pilar-detalle-item">
+              <li class="fundamento-item">
                 <strong>Moodle desde 2016</strong>
                 <p>Dominio funcional continuado de las herramientas, roles, calificaciones, certificados y configuración de cursos en entornos de producción.</p>
               </li>
@@ -523,60 +565,57 @@
     </section>
 
     <!-- ======================================================================
-         F. CONTACTO
+         F. CONTACTO DIRECTO
          ====================================================================== -->
     <section id="contacto" class="seccion seccion-contacto" aria-labelledby="titulo-contacto">
       <div class="contenedor">
         
         <div class="encabezado-seccion">
-          <span class="etiqueta-seccion">04 / Contacto directo</span>
+          <div class="tag-tecnico">
+            <span class="señal-acento">04</span>
+            <span>// CANAL DIRECTO DE COMUNICACIÓN</span>
+          </div>
           <h2 id="titulo-contacto">¿Necesitas apoyo con tu campus o quieres transformar tus materiales?</h2>
           <p>
             Cuéntame brevemente qué necesitas. Revisaremos el alcance y las posibles formas de colaboración.
           </p>
         </div>
 
-        <div class="contacto-grid">
+        <div class="contacto-reticula">
           
-          <!-- Canal directo de comunicación -->
-          <div class="contacto-caja-principal">
+          <!-- Terminal de contacto directo -->
+          <div class="contacto-terminal-caja">
             <h3>Comunicación directa por correo electrónico</h3>
             
-            <p class="texto-secundario" style="color: rgba(242, 235, 221, 0.85); margin-bottom: 1rem;">
-              Para garantizar agilidad y trazabilidad, gestiono las consultas directamente por correo electrónico:
+            <p style="font-size: var(--fs-sm); color: #A3AAB8; margin-bottom: 1.25rem;">
+              Para garantizar agilidad y trazabilidad técnica, gestiono las consultas directamente por correo electrónico:
             </p>
 
-            <!-- Indicador de correo con botón para copiar -->
-            <div class="contacto-email-display">
+            <!-- Consola de correo con botón de copiado -->
+            <div class="contacto-email-consola">
               <span class="contacto-correo-texto">contacto@jotaiza.com</span>
               <button type="button" class="btn-copiar-correo" aria-label="Copiar dirección de correo al portapapeles">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
                 </svg>
-                <span>Copiar dirección</span>
+                <span>[Copiar dirección]</span>
               </button>
             </div>
 
-            <!-- Acciones principales de contacto -->
-            <div class="contacto-acciones">
+            <!-- Botón principal de contacto mailto -->
+            <div class="contacto-acciones-columna">
               <a href="mailto:contacto@jotaiza.com?subject=Consulta%20sobre%20servicios%20-%20Jotaiza" class="btn btn-primary">
                 <span>Escribir a contacto@jotaiza.com</span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
+                <span class="señal-acento" style="color: #FFFFFF;" aria-hidden="true">→</span>
               </a>
             </div>
 
             <!-- Ubicación profesional obligatoria -->
             <div class="contacto-ubicacion-bloque">
-              <svg class="contacto-ubicacion-icono" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-              </svg>
               <div>
                 <strong>Ubicación profesional:</strong> Barcelona y área metropolitana.
-                <div style="font-size: var(--fs-xs); opacity: 0.85; margin-top: 0.2rem;">
-                  Servicios a distancia para toda España y reuniones de coordinación según se acuerde.
+                <div style="font-size: var(--fs-xs); opacity: 0.85; margin-top: 0.25rem; font-family: var(--fuente-mono);">
+                  Servicios a distancia para toda España. Reuniones y coordinación telemática.
                 </div>
               </div>
             </div>
@@ -584,23 +623,23 @@
           </div>
 
           <!-- Guía para facilitar la consulta del cliente -->
-          <div class="contacto-guia-cliente">
-            <h3 class="guia-cliente-titulo">¿Qué información es útil en tu primer mensaje?</h3>
-            <p class="guia-cliente-intro">
+          <div class="contacto-guia-bloque">
+            <h3>¿Qué información es útil en tu primer mensaje?</h3>
+            <p class="contacto-guia-intro">
               Para poder responder con una primera valoración de viabilidad y alcance:
             </p>
 
-            <ul class="guia-cliente-puntos" role="list">
-              <li class="guia-punto-item">
-                <span class="guia-punto-indicador" aria-hidden="true"></span>
+            <ul class="guia-items-lista" role="list">
+              <li class="guia-item-punto">
+                <span class="punto-indicador-mono">01.</span>
                 <div>
                   <strong>Para administración de Moodle:</strong>
                   Indica el volumen aproximado de cursos o alumnos activos y si buscas un soporte continuado mensual o una puesta a punto puntual.
                 </div>
               </li>
 
-              <li class="guia-punto-item">
-                <span class="guia-punto-indicador" aria-hidden="true"></span>
+              <li class="guia-item-punto">
+                <span class="punto-indicador-mono">02.</span>
                 <div>
                   <strong>Para transformación de materiales:</strong>
                   Menciona el formato original de la documentación (PDF, Word, manuales técnicos) y si requieres transformación básica o diseño didáctico con montaje en LMS.
@@ -608,13 +647,8 @@
               </li>
             </ul>
 
-            <div class="aviso-honestidad-contacto">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="12" y1="8" x2="12" y2="12"></line>
-                <line x1="12" y1="16" x2="12.01" y2="16"></line>
-              </svg>
-              <span>Respuesta habitual en días laborables en un plazo de 24 a 48 horas.</span>
+            <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid rgba(255, 255, 255, 0.08); font-family: var(--fuente-mono); font-size: var(--fs-micro); color: #8C93A0;">
+              Respuesta habitual en días laborables en un plazo de 24 a 48 horas.
             </div>
           </div>
 
@@ -631,20 +665,20 @@
   <footer class="sitio-pie" role="contentinfo">
     <div class="contenedor">
       
-      <div class="pie-grid">
+      <div class="pie-reticula">
         
         <!-- Identidad y resumen -->
-        <div class="pie-marca">
-          <a href="#" class="pie-logo">
+        <div class="pie-marca-columna">
+          <a href="#" class="pie-logo-marca">
             JOTAIZA
-            <span class="logotipo-punto" aria-hidden="true"></span>
+            <span class="marca-punto-acento" aria-hidden="true"></span>
           </a>
-          <p class="pie-descripcion">
+          <p class="pie-descriptor-texto">
             Administración Moodle y transformación de contenidos e-learning para centros de formación, academias y empresas.
           </p>
         </div>
 
-        <!-- Navegación rápida -->
+        <!-- Navegación -->
         <div class="pie-columna">
           <h4 class="pie-columna-titulo">Navegación</h4>
           <ul class="pie-enlaces-lista" role="list">
@@ -663,23 +697,23 @@
               <a href="mailto:contacto@jotaiza.com">contacto@jotaiza.com</a>
             </li>
             <li>
-              <button type="button" class="pie-legal-btn" data-abre-modal="modal-aviso-legal">Aviso legal</button>
+              <button type="button" class="pie-legal-btn" data-abre-modal="modal-aviso-legal">[Aviso legal]</button>
             </li>
             <li>
-              <button type="button" class="pie-legal-btn" data-abre-modal="modal-privacidad">Política de privacidad</button>
+              <button type="button" class="pie-legal-btn" data-abre-modal="modal-privacidad">[Política de privacidad]</button>
             </li>
             <li>
-              <button type="button" class="pie-legal-btn" data-abre-modal="modal-cookies">Política de cookies</button>
+              <button type="button" class="pie-legal-btn" data-abre-modal="modal-cookies">[Política de cookies]</button>
             </li>
           </ul>
         </div>
 
       </div>
 
-      <!-- Barra inferior de Copyright -->
-      <div class="pie-inferior">
+      <!-- Barra final de Copyright -->
+      <div class="pie-barra-final">
         <p>© 2026 Juan Carlos Otaiza — JOTAIZA. Todos los derechos reservados.</p>
-        <p>Sitio profesional independiente · jotaiza.com</p>
+        <p>ESTUDIO PROFESIONAL INDEPENDIENTE · JOTAIZA.COM</p>
       </div>
 
     </div>
@@ -689,9 +723,7 @@
        NOTIFICACIÓN ACCESIBLE (TOAST COPIADO)
        ======================================================================== -->
   <div class="toast-notificacion" role="status" aria-live="polite" aria-hidden="true">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-      <path d="M20 6L9 17l-5-5"></path>
-    </svg>
+    <span class="señal-acento">■</span>
     <span class="toast-texto">Correo copiado al portapapeles</span>
   </div>
 
@@ -727,7 +759,7 @@
         </p>
       </div>
       <div class="modal-pie">
-        <button type="button" class="btn btn-secondary" data-cierra-modal>Cerrar</button>
+        <button type="button" class="btn btn-secondary" data-cierra-modal>Cerrar ventana</button>
       </div>
     </div>
   </dialog>
@@ -765,7 +797,7 @@
         </p>
       </div>
       <div class="modal-pie">
-        <button type="button" class="btn btn-secondary" data-cierra-modal>Cerrar</button>
+        <button type="button" class="btn btn-secondary" data-cierra-modal>Cerrar ventana</button>
       </div>
     </div>
   </dialog>
@@ -794,7 +826,7 @@
         </p>
       </div>
       <div class="modal-pie">
-        <button type="button" class="btn btn-secondary" data-cierra-modal>Cerrar</button>
+        <button type="button" class="btn btn-secondary" data-cierra-modal>Cerrar ventana</button>
       </div>
     </div>
   </dialog>

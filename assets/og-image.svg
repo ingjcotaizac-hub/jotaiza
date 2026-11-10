@@ -1,45 +1,56 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
   <defs>
     <style>
-      .og-bg { fill: #F2EBDD; }
-      .og-border { stroke: #263B3D; stroke-width: 1.5; stroke-opacity: 0.15; fill: none; }
-      .og-brand { font-family: 'Georgia', 'Source Serif 4', serif; font-size: 38px; font-weight: 700; fill: #263B3D; letter-spacing: 0.15em; }
-      .og-pill { fill: #263B3D; }
-      .og-pill-text { font-family: 'Segoe UI', 'DM Sans', sans-serif; font-size: 15px; font-weight: 600; fill: #F2EBDD; letter-spacing: 0.1em; text-transform: uppercase; }
-      .og-title { font-family: 'Georgia', 'Source Serif 4', serif; font-size: 54px; font-weight: 700; fill: #263B3D; line-height: 1.2; }
-      .og-subtitle { font-family: 'Segoe UI', 'DM Sans', sans-serif; font-size: 24px; font-weight: 400; fill: #292B2A; line-height: 1.45; }
-      .og-author { font-family: 'Segoe UI', 'DM Sans', sans-serif; font-size: 19px; font-weight: 500; fill: #8A927A; letter-spacing: 0.04em; }
-      .og-accent { fill: #A85D43; }
+      .og-bg { fill: #FFFFFF; }
+      .og-border { stroke: #0F1115; stroke-width: 2; fill: none; }
+      .og-hairline { stroke: #D8DCE3; stroke-width: 1; fill: none; }
+      .og-mono { font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; fill: #5E6573; letter-spacing: 0.16em; }
+      .og-brand { font-family: 'IBM Plex Sans', sans-serif; font-size: 42px; font-weight: 700; fill: #0F1115; letter-spacing: 0.08em; }
+      .og-title { font-family: 'IBM Plex Sans', sans-serif; font-size: 52px; font-weight: 700; fill: #0F1115; line-height: 1.15; }
+      .og-title-accent { fill: #0038FF; }
+      .og-subtitle { font-family: 'IBM Plex Sans', sans-serif; font-size: 23px; font-weight: 400; fill: #2A2D34; line-height: 1.45; }
+      .og-signal { fill: #0038FF; }
     </style>
   </defs>
 
-  <!-- Background -->
+  <!-- Fondo blanco neutro -->
   <rect width="1200" height="630" class="og-bg"/>
   
-  <!-- Subtle editorial border frame -->
+  <!-- Marco estructural exterior de alta definición -->
   <rect x="40" y="40" width="1120" height="550" class="og-border"/>
-  <rect x="52" y="52" width="1096" height="526" stroke="#8A927A" stroke-width="1" stroke-opacity="0.25" fill="none"/>
+  
+  <!-- Retícula técnica editorial interior -->
+  <line x1="40" y1="130" x2="1160" y2="130" class="og-hairline"/>
+  <line x1="40" y1="490" x2="1160" y2="490" class="og-hairline"/>
+  <line x1="860" y1="40" x2="860" y2="490" class="og-hairline"/>
 
-  <!-- Top bar -->
-  <text x="80" y="115" class="og-brand">JOTAIZA</text>
-  <circle cx="278" cy="104" r="4.5" class="og-accent"/>
+  <!-- Cabecera -->
+  <text x="70" y="94" class="og-brand">JOTAIZA</text>
+  <rect x="250" y="72" width="10" height="10" class="og-signal"/>
+  <text x="275" y="90" class="og-mono">ESTUDIO TÉCNICO // E-LEARNING &amp; MOODLE</text>
 
-  <!-- Badge -->
-  <rect x="80" y="150" width="310" height="36" rx="4" class="og-pill"/>
-  <text x="96" y="173" class="og-pill-text">Especialista independiente</text>
+  <!-- Panel de coordenadas (arriba a la derecha) -->
+  <text x="880" y="80" class="og-mono">REF: SYS-2026-ID</text>
+  <text x="880" y="104" class="og-mono">LOC: BARCELONA (ES)</text>
 
-  <!-- Main Headline -->
-  <text x="80" y="255" class="og-title">Tu campus Moodle, bien gestionado.</text>
-  <text x="80" y="325" class="og-title">Tus manuales, convertidos en cursos.</text>
+  <!-- Titular Hero Editorial de gran impacto -->
+  <text x="70" y="225" class="og-title">Tu campus Moodle, bien gestionado.</text>
+  <text x="70" y="295" class="og-title">Tus manuales, convertidos en cursos.</text>
 
-  <!-- Decorative line -->
-  <line x1="80" y1="365" x2="220" y2="365" stroke="#A85D43" stroke-width="3"/>
+  <!-- Subtítulo técnico descriptivo -->
+  <text x="70" y="375" class="og-subtitle">Administración funcional de Moodle y transformación de contenidos formativos</text>
+  <text x="70" y="415" class="og-subtitle">para academias, centros de formación y empresas.</text>
 
-  <!-- Subtitle -->
-  <text x="80" y="420" class="og-subtitle">Administración funcional de Moodle y transformación de contenidos formativos</text>
-  <text x="80" y="455" class="og-subtitle">para academias, centros de formación y empresas.</text>
+  <!-- Columna lateral técnica (derecha) -->
+  <rect x="880" y="170" width="240" height="85" fill="#F6F7F9" stroke="#D8DCE3" stroke-width="1"/>
+  <text x="900" y="200" class="og-mono" fill="#0038FF">01 // LÍNEA OPERATIVA</text>
+  <text x="900" y="228" font-family="'IBM Plex Sans', sans-serif" font-size="14px" font-weight="600" fill="#0F1115">Gestión funcional Moodle</text>
 
-  <!-- Footer metadata -->
-  <line x1="80" y1="505" x2="1120" y2="505" stroke="#263B3D" stroke-width="1" stroke-opacity="0.12"/>
-  <text x="80" y="542" class="og-author">Juan Carlos Otaiza · jotaiza.com · Barcelona y área metropolitana</text>
+  <rect x="880" y="280" width="240" height="85" fill="#F6F7F9" stroke="#D8DCE3" stroke-width="1"/>
+  <text x="900" y="310" class="og-mono" fill="#0038FF">02 // PRODUCCIÓN</text>
+  <text x="900" y="338" font-family="'IBM Plex Sans', sans-serif" font-size="14px" font-weight="600" fill="#0F1115">Manuales a e-learning</text>
+
+  <!-- Pie técnico -->
+  <text x="70" y="535" class="og-mono">ESPECIALISTA INDEPENDIENTE · JUAN CARLOS OTAIZA · JOTAIZA.COM</text>
+  <text x="960" y="535" class="og-mono" fill="#0038FF">ESTUDIO DE PRODUCCIÓN</text>
 </svg>
