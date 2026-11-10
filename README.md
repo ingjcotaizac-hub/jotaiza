@@ -72,7 +72,8 @@ En cumplimiento con el criterio de no repetir bloques idénticos:
    ```
 2. **Configuración de Dominio y DNS:**
    - Dominio personalizado: `jotaiza.com` configurado en [`CNAME`](CNAME).
-   - Registros DNS en el registrador:
-     - 4 registros A hacia: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`.
-     - 1 registro CNAME `www` hacia `TU-USUARIO.github.io.`.
+7. **Registros DNS en el registrador (para jotaiza.com):**
+   - 4 registros A hacia: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`.
+   - 1 registro CNAME `www` hacia `ingjcotaizac-hub.github.io.`.
+   - Repositorio activo: [https://github.com/ingjcotaizac-hub/jotaiza](https://github.com/ingjcotaizac-hub/jotaiza)
    - Activar **Enforce HTTPS** en la pestaña *Settings > Pages* de GitHub.
