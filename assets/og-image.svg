@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <style>
+      .og-bg { fill: #F2EBDD; }
+      .og-border { stroke: #263B3D; stroke-width: 1.5; stroke-opacity: 0.15; fill: none; }
+      .og-brand { font-family: 'Georgia', 'Source Serif 4', serif; font-size: 38px; font-weight: 700; fill: #263B3D; letter-spacing: 0.15em; }
+      .og-pill { fill: #263B3D; }
+      .og-pill-text { font-family: 'Segoe UI', 'DM Sans', sans-serif; font-size: 15px; font-weight: 600; fill: #F2EBDD; letter-spacing: 0.1em; text-transform: uppercase; }
+      .og-title { font-family: 'Georgia', 'Source Serif 4', serif; font-size: 54px; font-weight: 700; fill: #263B3D; line-height: 1.2; }
+      .og-subtitle { font-family: 'Segoe UI', 'DM Sans', sans-serif; font-size: 24px; font-weight: 400; fill: #292B2A; line-height: 1.45; }
+      .og-author { font-family: 'Segoe UI', 'DM Sans', sans-serif; font-size: 19px; font-weight: 500; fill: #8A927A; letter-spacing: 0.04em; }
+      .og-accent { fill: #A85D43; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" class="og-bg"/>
+  
+  <!-- Subtle editorial border frame -->
+  <rect x="40" y="40" width="1120" height="550" class="og-border"/>
+  <rect x="52" y="52" width="1096" height="526" stroke="#8A927A" stroke-width="1" stroke-opacity="0.25" fill="none"/>
+
+  <!-- Top bar -->
+  <text x="80" y="115" class="og-brand">JOTAIZA</text>
+  <circle cx="278" cy="104" r="4.5" class="og-accent"/>
+
+  <!-- Badge -->
+  <rect x="80" y="150" width="310" height="36" rx="4" class="og-pill"/>
+  <text x="96" y="173" class="og-pill-text">Especialista independiente</text>
+
+  <!-- Main Headline -->
+  <text x="80" y="255" class="og-title">Tu campus Moodle, bien gestionado.</text>
+  <text x="80" y="325" class="og-title">Tus manuales, convertidos en cursos.</text>
+
+  <!-- Decorative line -->
+  <line x1="80" y1="365" x2="220" y2="365" stroke="#A85D43" stroke-width="3"/>
+
+  <!-- Subtitle -->
+  <text x="80" y="420" class="og-subtitle">Administración funcional de Moodle y transformación de contenidos formativos</text>
+  <text x="80" y="455" class="og-subtitle">para academias, centros de formación y empresas.</text>
+
+  <!-- Footer metadata -->
+  <line x1="80" y1="505" x2="1120" y2="505" stroke="#263B3D" stroke-width="1" stroke-opacity="0.12"/>
+  <text x="80" y="542" class="og-author">Juan Carlos Otaiza · jotaiza.com · Barcelona y área metropolitana</text>
+</svg>
