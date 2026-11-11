@@ -515,9 +515,9 @@ a:hover {
 }
 
 .diagrama-barra-superior {
-  background-color: var(--color-gris-fondo);
+  background-color: var(--color-fondo);
   border-bottom: 1px solid var(--color-gris-borde);
-  padding: 0.65rem 1rem;
+  padding: 0.75rem 1.25rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -529,17 +529,17 @@ a:hover {
 }
 
 .diagrama-cuerpo {
-  padding: clamp(1.25rem, 2.5vw, 1.75rem);
+  padding: 1.5rem 1.25rem;
   display: flex;
   flex-direction: column;
-  gap: 1.15rem;
+  gap: 1.25rem;
 }
 
 /* Módulos de servicios */
 .diagrama-modulo {
-  border: 1px solid var(--color-gris-borde-fino);
+  border: none;
   background-color: var(--color-gris-fondo);
-  padding: 1.15rem 1.25rem;
+  padding: 1.25rem;
   position: relative;
 }
 
@@ -547,7 +547,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--color-gris-borde);
+  border-bottom: 1px solid var(--color-gris-borde-fino);
   padding-bottom: 0.5rem;
   margin-bottom: 0.75rem;
 }
@@ -562,9 +562,9 @@ a:hover {
 .modulo-tag {
   font-family: var(--fuente-mono);
   font-size: var(--fs-micro);
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  color: var(--color-ultramar);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--color-gris-texto);
   text-transform: uppercase;
 }
 
@@ -619,7 +619,7 @@ a:hover {
 .diagrama-barra-inferior {
   border-top: 1px solid var(--color-gris-borde);
   background-color: var(--color-fondo);
-  padding: 0.65rem 1rem;
+  padding: 0.75rem 1.25rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -639,7 +639,7 @@ a:hover {
 .servicios-contenedor-diferenciado {
   display: flex;
   flex-direction: column;
-  gap: clamp(3.5rem, 6vw, 5.5rem);
+  gap: clamp(4rem, 7vw, 6rem);
 }
 
 /* --------------------------------------------------------------------------
@@ -757,19 +757,20 @@ a:hover {
   margin-right: 0.25rem;
 }
 
-/* Cláusula de delimitación técnica */
+/* Cláusula de delimitación técnica (nota abierta sin doble recuadro) */
 .clausula-delimitacion {
-  background-color: var(--color-gris-fondo);
-  border: 1px solid var(--color-gris-borde);
-  border-left: 3px solid var(--color-tinta);
-  padding: 1.15rem 1.4rem;
+  background-color: transparent;
+  border: none;
+  border-left: 2px solid var(--color-tinta);
+  padding: 0.5rem 0 0.5rem 1.25rem;
+  margin-top: 1.5rem;
   margin-bottom: 2rem;
 }
 
 .clausula-cabecera {
   font-family: var(--fuente-mono);
   font-size: var(--fs-micro);
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--color-tinta);
   font-weight: 600;
@@ -781,8 +782,8 @@ a:hover {
 
 .clausula-texto {
   font-size: var(--fs-sm);
-  color: var(--color-tinta-suave);
-  line-height: 1.5;
+  color: var(--color-gris-texto);
+  line-height: 1.55;
 }
 
 .servicio-accion-inferior {
@@ -834,15 +835,15 @@ a:hover {
 .pipeline-esquema-paso {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  margin-bottom: 2.25rem;
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* Niveles de intervención */
 .columna-nivel {
   border: 1px solid var(--color-gris-borde);
   background-color: var(--color-fondo);
-  padding: 1.75rem 1.5rem;
+  padding: 2rem 1.75rem;
   display: flex;
   flex-direction: column;
 }
@@ -964,13 +965,13 @@ a:hover {
 }
 
 .nota-apoyo-editorial {
-  background-color: var(--color-fondo);
-  border: 1px solid var(--color-gris-borde);
-  border-left: 3px solid var(--color-ultramar);
-  padding: 1.25rem 1.5rem;
+  background-color: transparent;
+  border: none;
+  border-left: 2px solid var(--color-ultramar);
+  padding: 0.65rem 0 0.65rem 1.25rem;
   display: flex;
-  align-items: center;
-  gap: 1rem;
+  align-items: baseline;
+  gap: 0.85rem;
 }
 
 .nota-apoyo-indicador {
@@ -1117,9 +1118,9 @@ a:hover {
 }
 
 .contacto-terminal-caja {
-  background-color: var(--color-fondo);
-  border: 1px solid var(--color-gris-borde);
-  padding: clamp(1.75rem, 3.5vw, 2.5rem);
+  background-color: transparent;
+  border: none;
+  padding: 0;
 }
 
 .contacto-terminal-caja h3 {
@@ -1131,8 +1132,8 @@ a:hover {
 .contacto-intro-texto {
   font-size: var(--fs-sm);
   color: var(--color-gris-texto);
-  margin-bottom: 1.25rem;
-  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  line-height: 1.55;
 }
 
 .contacto-email-consola {
@@ -1141,7 +1142,7 @@ a:hover {
   justify-content: space-between;
   background-color: var(--color-gris-fondo);
   border: 1px solid var(--color-gris-borde);
-  padding: 0.95rem 1.25rem;
+  padding: 1.1rem 1.35rem;
   margin-bottom: 1.5rem;
   flex-wrap: wrap;
   gap: 0.75rem;
@@ -1491,6 +1492,14 @@ dialog.modal-legal::backdrop {
   transform: translateY(0);
   opacity: 1;
   pointer-events: auto;
+}
+
+.toast-notificacion.toast-error {
+  border-color: #D32F2F;
+}
+
+.toast-notificacion.toast-error .señal-acento {
+  color: #FF5252;
 }
 
 /* --------------------------------------------------------------------------
